@@ -1,0 +1,75 @@
+<div class="list-group">
+  <div class="list-group-item panel panel-info">
+    <div class="panel-heading">Today</div>
+    <div class="panel-body">
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label class="col-xs-3">What did you eat?</label>
+          <input class="col-xs-9" type="text" placeholder="enter food item">
+        </div>
+        <div class="form-group">
+          <label class="col-xs-3">When did you eat it?</label>
+          <input class="col-xs-9" type="time" value="<%= Time.now.strftime('%H:%M:%S') %>">
+        </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle col-xs-offset-3 col-xs-9 col-sm-6" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+              How healthy was it?
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Very Healthy</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Not great, but not too bad</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Not so good</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">I should have skipped it</a></li>
+            </ul>
+          </div>    
+        </div>
+        <div class="form-group">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle col-xs-offset-3 col-xs-9 col-sm-6" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+              How enjoyable was it?
+              <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">It was awesome!</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">I enjoyed it</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Not so good</a></li>
+              <li role="presentation"><a role="menuitem" tabindex="-1" href="#">I should have skipped it</a></li>
+            </ul>
+          </div>    
+        </div>
+        <div class="row">
+          <button class="btn btn-primary col-xs-offset-10 col-xs-2 col-sm-offset-7">Add</button>
+        </div>
+      </form>
+      <br/>
+      <div class="well">
+        <ul class="list-group">
+          <li class="list-group-item">Coffee @ 3pm</li>
+          <li class="list-group-item">Mac &amp; Cheese @ 1pm</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="list-group-item panel panel-info">
+    <div class="panel-heading">Yesterday</div>
+    <div class="panel-body">
+      <ul>
+        <li>Special K Cereal</li>
+        <li>4 cups of coffee</li>
+        <li>glass of wine</li>
+        <li>ramen</li>
+      </ul>
+    </div>
+  </div>
+  <div class="list-group-item panel panel-info">
+    <div class="panel-heading">March 24th</div>
+    <div class="panel-body">
+      <ul>
+        <li>Bagel w/ cream cheese</li>
+        <li>Ramen</li>
+      </ul>
+    </div>
+  </div>
+</div>
